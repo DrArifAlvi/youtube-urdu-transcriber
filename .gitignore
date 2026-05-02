@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.env/
+
+# Output files (IMPORTANT)
+output/
+*.mp3
+*.wav
+*.m4a
+*.docx
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# HuggingFace cache (optional)
+.cache/
