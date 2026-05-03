@@ -71,7 +71,7 @@ Paste your YouTube link when prompted.
 
 For better formatting, use DeepSeek:
 
-Paste your transcriptin DeepSeek and use this prompt:
+Paste your transcription DeepSeek and use this prompt:
 
 ```
 Create clear paragraphs from this text.
