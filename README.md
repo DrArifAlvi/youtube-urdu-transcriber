@@ -1,69 +1,84 @@
-## Installation
+# YouTube Urdu Transcriber
+
+Transcribes Urdu-first YouTube speeches (with English mix) into clean Word documents using local AI.
+
+---
+
+## ✨ Features
+
+* Urdu-first transcription (no forced translation)
+* Handles Urdu + English mixed speech
+* Outputs formatted Word (.docx)
+* Progress tracking with time estimation
+* Fully local (no API required)
+
+---
+
+## ❓ Why this tool?
+
+Most transcription tools:
+
+* Translate Urdu → English ❌
+* Lose original speech structure ❌
+* YouTube transcripts render Urdu incorrectly (e.g., as Hindi/Sanskrit text) ❌
+
+This tool preserves:
+
+* Original Urdu language
+* Original English phrases
+* Natural spoken flow
+
+---
+
+## ⚙️ Installation
 
 ### 1. Install Python
 
-Download and install Python 3.10 or 3.11.
-
----
+Install Python 3.10 or later.
 
 ### 2. Install FFmpeg
 
-Download FFmpeg from:
-https://ffmpeg.org/download.html
+Download and install FFmpeg, then add it to your system PATH.
 
-After downloading:
+### 3. Install dependencies
 
-* Extract the folder
-* Add the `bin` folder to your system PATH
-
-Test installation:
-
-```
-ffmpeg -version
-```
-
----
-
-### 3. Install Python Requirements
-
-Open terminal in the project folder and run:
-
-```
+```bash
 pip install -r requirements.txt
 ```
 
 ---
 
-## Usage
+## ▶️ Usage
 
 Run the script:
 
-```
+```bash
 python youtube_urdu_transcriber.py
 ```
 
-Paste your YouTube URL when prompted.
+Paste your YouTube link when prompted.
 
 ---
 
-## Output
+## 📄 Output
 
-* MP3 audio file
-* Word (.docx) transcript (in `output/` folder)
+* Audio file saved locally
+* Word document (.docx) transcript (Urdu + English mixed)
 
 ---
 
-## Optional and Recommended: Improve Paragraphs with DeepSeek
+## 🧠 Optional (Recommended): Improve Paragraphs
 
-You can refine formatting using DeepSeek:Copy output and paste in DeepSeek with following directions.
+For better formatting, use DeepSeek:
 
-Prompt:
+Paste your transcriptin DeepSeek and use this prompt:
 
 ```
 Create clear paragraphs from this text.
-Make paragraphs.
-Do NOT reduce words.
-Preserve Urdu and English.
+Do not reduce content.
+Improve words to express context.
+Continue with Urdu and English flow of content.
 Improve formatting.
 ```
-Copy result you get from DeepSeek in Word
+
+Then copy the result into Word for a refined transcript.
